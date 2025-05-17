@@ -1,58 +1,66 @@
-# 📘 Blog Postings REST API with Database Integration
+# 📘 Blog Postings REST API
 
-## 📌 Project Overview
-
-This is a simple RESTful API for managing blog posts. It supports full CRUD operations and uses a relational database (PostgreSQL, MySQL, or MariaDB). The API is tested using Postman.
-
-* Provide basic API Security
-* Rate limiter (Every 2mins, 100 transactions)
+A secure and modular RESTful API for managing blog posts with full CRUD operations, JWT-based authentication, and rate limiting. Built using Node.js and Express.js, this API connects to a relational database (MySQL, PostgreSQL, or MariaDB) for persistent data storage. Tested thoroughly with Postman.
 
 ---
 
-## 🛠️ Technology Stack
+## 📺 Demo Video
 
-- **Backend:** Node.js, Express.js  
-- **Database:** PostgreSQL / MySQL / MariaDB  
-- **Tools:** Postman, GitHub
+Watch the full demo and testing instructions:  
+🎥 **[Click to Watch the Video](https://drive.google.com/drive/u/2/folders/1aHqUwpwOxS_Fc1dKs7tBLhkwD7ezUmic)**
+
+### 🔍 Demo includes:
+- 🔐 User Registration
+- 🔑 User Login with JWT
+- 📝 Creating Blog Posts
+- 📥 Retrieving All Posts
+- 📄 Fetching a Single Post by ID
+- ✏️ Updating Blog Posts
+- ❌ Deleting Blog Posts
 
 ---
 
-## 🚀 API Endpoints
+## ✨ Key Features
 
-| Method | Endpoint        | Description                       |
-|--------|-----------------|-----------------------------------|
-| GET    | `/posts`        | Retrieve all blog posts           |
-| GET    | `/posts/:id`    | Retrieve a specific blog post     |
-| POST   | `/posts`        | Create a new blog post            |
-| PUT    | `/posts/:id`    | Update an existing blog post      |
-| DELETE | `/posts/:id`    | Delete a blog post                |
+- 🔒 **JWT Authentication** – Secure user login and access control
+- 🔃 **CRUD Functionality** – Full support for creating, reading, updating, and deleting blog posts
+- 🚫 **Rate Limiting** – 100 requests per 2 minutes to prevent abuse
+- 🛡️ **Security** – Password hashing using `bcryptjs`, `helmet`, and `cors`
+- ✅ **Validation & Error Handling** – Clean and informative response messages
+- 🧪 **Postman Tested** – Sample requests using `x-www-form-urlencoded` format
 
+---
 
-### 📝 Sample Blog Post JSON
+## 🛠️ Tech Stack
+
+| Category     | Technology                        |
+|--------------|------------------------------------|
+| Backend      | Node.js, Express.js                |
+| Database     | MySQL / PostgreSQL / MariaDB       |
+| Auth & Security | JWT, bcryptjs, helmet, cors     |
+| Development  | nodemon, dotenv, Postman           |
+| Version Control | Git & GitHub                    |
+
+---
+
+## 📦 API Endpoints
+
+| Method | Endpoint         | Description                | Auth Required |
+|--------|------------------|----------------------------|----------------|
+| POST   | `/auth/register` | Register a new user        | ❌              |
+| POST   | `/auth/login`    | Login & get JWT token      | ❌              |
+| GET    | `/posts`         | Get all blog posts         | ✅              |
+| GET    | `/posts/:id`     | Get a blog post by ID      | ✅              |
+| POST   | `/posts`         | Create a new blog post     | ✅              |
+| PUT    | `/posts/:id`     | Update an existing post    | ✅              |
+| DELETE | `/posts/:id`     | Delete a blog post         | ✅              |
+
+---
+
+## 📝 Sample Request (POST /posts)
 ```json
 {
   "title": "My First Blog Post",
   "content": "This is the content of the blog.",
   "author": "John Doe"
 }
-```
-
-# Testing with Postman
-Test all endpoints using Postman.
-
-Save the Postman collection.
-
-Record a video demonstrating the functionality:
-
-* Showing adding a new post
-
-* Getting all posts
-
-* Getting one post by ID
-
-* Editing a post
-
-* Deleting a post
-
-Google Drive
-https://drive.google.com/drive/folders/1aHqUwpwOxS_Fc1dKs7tBLhkwD7ezUmic?usp=drive_link
