@@ -7,7 +7,10 @@ require('dotenv').config();
 
 const app = express();
 
-//  Rate limiter
+// Trust proxy to get real IP 
+app.set('trust proxy', 1);
+
+// Rate limiter
 const limiter = rateLimit({
   windowMs: 2 * 60 * 1000, 
   max: 100, 
