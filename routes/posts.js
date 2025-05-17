@@ -1,7 +1,7 @@
-const authenticateToken = require('../middleware/authenticateToken');
 const express = require('express');
 const router = express.Router();
 const postsController = require('../controllers/postsController');
+const authenticateToken = require('../middleware/authenticateToken');
 
 
 // ✅ All routes now require a valid token
