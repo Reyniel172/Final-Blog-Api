@@ -7,7 +7,7 @@ A secure and modular RESTful API for managing blog posts with full CRUD operatio
 ## 📺 Demo Video
 
 Watch the full demo and testing instructions:  
-🎥 **[Click to Watch the Video](https://drive.google.com/drive/u/2/folders/1aHqUwpwOxS_Fc1dKs7tBLhkwD7ezUmic)**
+🎥 **[Click to Watch the Video]()**
 
 ### 🔍 Demo includes:
 - 🔐 User Registration
