@@ -7,7 +7,7 @@ A secure and modular RESTful API for managing blog posts with full CRUD operatio
 ## 📺 Demo Video
 
 Watch the full demo and testing instructions:  
-🎥 **[Click to Watch the Video](Untitled Request - blogs_api - Visual Studio Code 2025-05-18 22-30-38)**
+🎥 **[Click to Watch the Video]("Untitled Request - blogs_api - Visual Studio Code 2025-05-18 22-30-38")**
 
 ### 🔍 Demo includes:
 
