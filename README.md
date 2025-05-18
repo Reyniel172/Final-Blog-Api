@@ -7,9 +7,10 @@ A secure and modular RESTful API for managing blog posts with full CRUD operatio
 ## 📺 Demo Video
 
 Watch the full demo and testing instructions:  
-🎥 **[Click to Watch the Video]()**
+🎥 **[Click to Watch the Video](Untitled Request - blogs_api - Visual Studio Code 2025-05-18 22-30-38)**
 
 ### 🔍 Demo includes:
+
 - 🔐 User Registration
 - 🔑 User Login with JWT
 - 📝 Creating Blog Posts
@@ -33,34 +34,36 @@ Watch the full demo and testing instructions:
 
 ## 🛠️ Tech Stack
 
-| Category     | Technology                        |
-|--------------|------------------------------------|
-| Backend      | Node.js, Express.js                |
-| Database     | MySQL / PostgreSQL / MariaDB       |
-| Auth & Security | JWT, bcryptjs, helmet, cors     |
-| Development  | nodemon, dotenv, Postman           |
-| Version Control | Git & GitHub                    |
+| Category        | Technology                   |
+| --------------- | ---------------------------- |
+| Backend         | Node.js, Express.js          |
+| Database        | MySQL / PostgreSQL / MariaDB |
+| Auth & Security | JWT, bcryptjs, helmet, cors  |
+| Development     | nodemon, dotenv, Postman     |
+| Version Control | Git & GitHub                 |
 
 ---
 
 ## 📦 API Endpoints
 
-| Method | Endpoint         | Description                | Auth Required |
-|--------|------------------|----------------------------|----------------|
-| POST   | `/auth/register` | Register a new user        | ❌              |
-| POST   | `/auth/login`    | Login & get JWT token      | ❌              |
-| GET    | `/posts`         | Get all blog posts         | ✅              |
-| GET    | `/posts/:id`     | Get a blog post by ID      | ✅              |
-| POST   | `/posts`         | Create a new blog post     | ✅              |
-| PUT    | `/posts/:id`     | Update an existing post    | ✅              |
-| DELETE | `/posts/:id`     | Delete a blog post         | ✅              |
+| Method | Endpoint         | Description             | Auth Required |
+| ------ | ---------------- | ----------------------- | ------------- |
+| POST   | `/auth/register` | Register a new user     | ❌            |
+| POST   | `/auth/login`    | Login & get JWT token   | ❌            |
+| GET    | `/posts`         | Get all blog posts      | ✅            |
+| GET    | `/posts/:id`     | Get a blog post by ID   | ✅            |
+| POST   | `/posts`         | Create a new blog post  | ✅            |
+| PUT    | `/posts/:id`     | Update an existing post | ✅            |
+| DELETE | `/posts/:id`     | Delete a blog post      | ✅            |
 
 ---
 
 ## 📝 Sample Request (POST /posts)
+
 ```json
 {
   "title": "My First Blog Post",
   "content": "This is the content of the blog.",
   "author": "John Doe"
 }
+```
